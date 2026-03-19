@@ -1,23 +1,56 @@
-{
-  "nome": "João Silva",
-  "idade": 32,
-  "profissao": "Analista de Sistemas",
-  "renda_mensal": 5000.00,
-  "perfil_investidor": "moderado",
-  "objetivo_principal": "Construir reserva de emergência",
-  "patrimonio_total": 15000.00,
-  "reserva_emergencia_atual": 10000.00,
-  "aceita_risco": false,
-  "metas": [
-    {
-      "meta": "Completar reserva de emergência",
-      "valor_necessario": 15000.00,
-      "prazo": "2026-06"
+[
+  {
+    "id_usuario": "USR001",
+    "dados_pessoais": {
+      "nome": "Lucas Mendes",
+      "idade": 29,
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "escolaridade": "superior_completo",
+      "estado_civil": "solteiro",
+      "dependentes": 0
     },
-    {
-      "meta": "Entrada do apartamento",
-      "valor_necessario": 50000.00,
-      "prazo": "2027-12"
-    }
-  ]
-}
+    "perfil_financeiro": {
+      "renda_mensal_liquida": 3500,
+      "fonte_renda": "CLT",
+      "estabilidade_emprego": "estavel",
+      "possui_reserva_emergencia": false,
+      "meses_reserva_atual": 0,
+      "possui_investimentos": false,
+      "possui_imovel": false,
+      "possui_veiculo": true,
+      "score_credito": 620
+    },
+    "perfil_comportamental": {
+      "tipo_perfil": "gastador_involuntario",
+      "maior_dificuldade": "não_saber_para_onde_vai_o_dinheiro",
+      "motivacao_principal": "alivio_do_estresse_financeiro",
+      "disciplina_financeira": "baixa",
+      "conhecimento_financeiro": "basico",
+      "aberto_a_investir": true,
+      "prefere_comunicacao": "chat_texto",
+      "horario_preferido_interacao": "noite"
+    },
+    "metas": [
+      {
+        "descricao": "Quitar fatura do cartão de crédito",
+        "valor_alvo": 2100,
+        "prazo_meses": 3,
+        "status": "em_andamento"
+      },
+      {
+        "descricao": "Montar reserva de emergência de 3 meses",
+        "valor_alvo": 10500,
+        "prazo_meses": 18,
+        "status": "nao_iniciada"
+      }
+    ],
+    "alertas_ativos": [
+      "cartao_credito_com_juros_altos",
+      "ausencia_de_reserva_emergencia",
+      "gastos_alimentacao_acima_do_recomendado"
+    ],
+    "data_cadastro": "2024-10-01",
+    "ultimo_acesso": "2024-11-05"
+  }
+]
