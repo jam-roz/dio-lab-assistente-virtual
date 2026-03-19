@@ -1,6 +1,6 @@
-data,canal,tema,resumo,resolvido
-2025-09-15,chat,CDB,Cliente perguntou sobre rentabilidade e prazos,sim
-2025-09-22,telefone,Problema no app,Erro ao visualizar extrato foi corrigido,sim
-2025-10-01,chat,Tesouro Selic,Cliente pediu explicação sobre o funcionamento do Tesouro Direto,sim
-2025-10-12,chat,Metas financeiras,Cliente acompanhou o progresso da reserva de emergência,sim
-2025-10-25,email,Atualização cadastral,Cliente atualizou e-mail e telefone,sim
+id_atendimento,id_usuario,data,canal,duracao_min,tema_principal,subtema,sentimento_usuario,resumo_conversa,acao_recomendada,acao_concluida,satisfacao_1a5
+ATD001,USR001,2024-10-03,chat,12,controle_de_gastos,categorização de despesas,frustrado,"Usuário relatou não saber para onde vai o salário todo mês. Informou renda de R$3.500 e sensação de que sempre falta dinheiro antes do dia 30.","Criar planilha de categorias e registrar todos os gastos por 30 dias",sim,4
+ATD002,USR001,2024-10-18,chat,9,controle_de_gastos,revisão mensal,engajado,"Retornou com os primeiros registros. Identificou que R$980 foram gastos em delivery e alimentação fora de casa — 28% da renda.","Estabelecer teto de R$500/mês para alimentação fora e cozinhar mais em casa",sim,5
+ATD003,USR001,2024-11-05,chat,15,dívidas,cartão de crédito,"ansioso","Revelou fatura do cartão de R$2.100 com juros de 12% ao mês. Pediu ajuda para sair dessa situação.","Negociar parcelamento sem juros com o banco e suspender uso do cartão por 90 dias",em_andamento,4
+ATD004,USR002,2024-09-15,chat,8,planejamento,reserva de emergência,curioso,"Primeiro contato. Usuário tem renda estável de R$6.200 mas nunca guardou dinheiro. Perguntou como começar.","Separar R$500/mês em conta separada como início de reserva de emergência",sim,5
+ATD005,USR002,2024-10-02,chat,11,investimentos,renda fixa,animado,"Usuário atingiu R$1.500 na reserva. Perguntou se deveria deixar na poupança ou buscar outra opção.","Mover para CDB com liquidez diária acima de 100% do CDI; manter poupança apenas para metas de curto prazo",sim,5
