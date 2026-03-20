@@ -1,11 +1,10 @@
-data,descricao,categoria,valor,tipo
-2025-10-01,Salário,receita,5000.00,entrada
-2025-10-02,Aluguel,moradia,1200.00,saida
-2025-10-03,Supermercado,alimentacao,450.00,saida
-2025-10-05,Netflix,lazer,55.90,saida
-2025-10-07,Farmácia,saude,89.00,saida
-2025-10-10,Restaurante,alimentacao,120.00,saida
-2025-10-12,Uber,transporte,45.00,saida
-2025-10-15,Conta de Luz,moradia,180.00,saida
-2025-10-20,Academia,saude,99.00,saida
-2025-10-25,Combustível,transporte,250.00,saida
+id_transacao,id_usuario,data,descricao,categoria,subcategoria,valor,tipo,forma_pagamento,parcelas,essencial
+TRX001,USR001,2024-11-01,Aluguel novembro,moradia,aluguel,-1200.00,debito,transferencia,1,sim
+TRX002,USR001,2024-11-01,Conta de luz,moradia,energia_eletrica,-148.30,debito,debito_automatico,1,sim
+TRX003,USR001,2024-11-02,Supermercado Extra,alimentacao,supermercado,-312.40,debito,cartao_debito,1,sim
+TRX004,USR001,2024-11-03,iFood - Hambúrguer,alimentacao,delivery,-54.90,debito,cartao_credito,1,nao
+TRX005,USR001,2024-11-04,Uber - Trabalho,transporte,aplicativo_transporte,-23.50,debito,cartao_credito,1,sim
+TRX006,USR001,2024-11-05,Netflix,lazer,streaming,-55.90,debito,cartao_credito,1,nao
+TRX007,USR001,2024-11-05,Spotify,lazer,streaming,-21.90,debito,cartao_credito,1,nao
+TRX008,USR001,2024-11-06,Farmácia - Remédio,saude,farmacia,-87.60,debito,cartao_debito,1,sim
+TRX009,USR001,2024-11-07,iFood - Pizza,alimentacao,delivery,-72.00,debito,cartao_credito,1,nao
