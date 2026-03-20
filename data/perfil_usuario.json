@@ -23,7 +23,7 @@
     },
     "perfil_comportamental": {
       "tipo_perfil": "gastador_involuntario",
-      "maior_dificuldade": "não_saber_para_onde_vai_o_dinheiro",
+      "maior_dificuldade": "nao_saber_para_onde_vai_o_dinheiro",
       "motivacao_principal": "alivio_do_estresse_financeiro",
       "disciplina_financeira": "baixa",
       "conhecimento_financeiro": "basico",
@@ -108,20 +108,5 @@
     "alertas_ativos": [],
     "data_cadastro": "2024-09-10",
     "ultimo_acesso": "2024-11-12"
-  }
-]
-        "descricao": "Montar reserva de emergência de 3 meses",
-        "valor_alvo": 10500,
-        "prazo_meses": 18,
-        "status": "nao_iniciada"
-      }
-    ],
-    "alertas_ativos": [
-      "cartao_credito_com_juros_altos",
-      "ausencia_de_reserva_emergencia",
-      "gastos_alimentacao_acima_do_recomendado"
-    ],
-    "data_cadastro": "2024-10-01",
-    "ultimo_acesso": "2024-11-05"
   }
 ]
