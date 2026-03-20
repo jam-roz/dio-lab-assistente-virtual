@@ -52,5 +52,76 @@
     ],
     "data_cadastro": "2024-10-01",
     "ultimo_acesso": "2024-11-05"
+  },
+  {
+    "id_usuario": "USR002",
+    "dados_pessoais": {
+      "nome": "Fernanda Oliveira",
+      "idade": 35,
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "escolaridade": "pos_graduacao",
+      "estado_civil": "casada",
+      "dependentes": 1
+    },
+    "perfil_financeiro": {
+      "renda_mensal_liquida": 6200,
+      "fonte_renda": "CLT",
+      "estabilidade_emprego": "muito_estavel",
+      "possui_reserva_emergencia": true,
+      "meses_reserva_atual": 1,
+      "possui_investimentos": true,
+      "possui_imovel": false,
+      "possui_veiculo": true,
+      "score_credito": 820
+    },
+    "perfil_comportamental": {
+      "tipo_perfil": "organizador_em_evolucao",
+      "maior_dificuldade": "nao_saber_como_investir",
+      "motivacao_principal": "seguranca_e_realizacao_de_sonhos",
+      "disciplina_financeira": "alta",
+      "conhecimento_financeiro": "intermediario",
+      "aberto_a_investir": true,
+      "prefere_comunicacao": "chat_texto",
+      "horario_preferido_interacao": "manha"
+    },
+    "metas": [
+      {
+        "descricao": "Completar reserva de emergência de 6 meses",
+        "valor_alvo": 37200,
+        "prazo_meses": 30,
+        "status": "em_andamento"
+      },
+      {
+        "descricao": "Viagem internacional para a família",
+        "valor_alvo": 8000,
+        "prazo_meses": 8,
+        "status": "em_andamento"
+      },
+      {
+        "descricao": "Entrada para imóvel próprio",
+        "valor_alvo": 80000,
+        "prazo_meses": 60,
+        "status": "planejando"
+      }
+    ],
+    "alertas_ativos": [],
+    "data_cadastro": "2024-09-10",
+    "ultimo_acesso": "2024-11-12"
+  }
+]
+        "descricao": "Montar reserva de emergência de 3 meses",
+        "valor_alvo": 10500,
+        "prazo_meses": 18,
+        "status": "nao_iniciada"
+      }
+    ],
+    "alertas_ativos": [
+      "cartao_credito_com_juros_altos",
+      "ausencia_de_reserva_emergencia",
+      "gastos_alimentacao_acima_do_recomendado"
+    ],
+    "data_cadastro": "2024-10-01",
+    "ultimo_acesso": "2024-11-05"
   }
 ]
