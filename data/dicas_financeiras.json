@@ -1,0 +1,55 @@
+{
+  "versao": "1.0",
+  "descricao": "Base de conhecimento de orientações e dicas financeiras do FinGuide AI. Usada para personalizar recomendações conforme perfil e contexto do usuário.",
+  "categorias": [
+    {
+      "id": "CAT001",
+      "categoria": "controle_de_gastos",
+      "perfis_alvo": [
+        "gastador_involuntario",
+        "iniciante_consciente",
+        "endividado_em_recuperacao"
+      ],
+      "nivel_conhecimento": "basico",
+      "dicas": [
+        {
+          "id": "DIC001",
+          "titulo": "Método 50-30-20",
+          "descricao": "Divida sua renda líquida em três blocos: 50% para necessidades (moradia, alimentação, transporte, saúde), 30% para desejos (lazer, restaurantes, assinaturas) e 20% para poupança e pagamento de dívidas. É um ponto de partida simples e eficaz para quem nunca fez controle financeiro.",
+          "quando_aplicar": "primeiro_contato_sem_historico_financeiro",
+          "exemplo_pratico": "Renda de R$3.000: R$1.500 para necessidades, R$900 para desejos, R$600 para poupar ou quitar dívidas.",
+          "tags": [
+            "orcamento",
+            "metodo",
+            "iniciante"
+          ]
+        },
+        {
+          "id": "DIC002",
+          "titulo": "Regra dos 48h para compras por impulso",
+          "descricao": "Antes de finalizar qualquer compra não planejada acima de um valor definido pelo próprio usuário (sugerido: R$80), espere 48 horas. Se ainda quiser comprar depois desse prazo, pode ser uma compra consciente. Esse intervalo elimina mais de 60% das compras impulsivas.",
+          "quando_aplicar": "usuario_com_padrao_de_compras_impulsivas",
+          "exemplo_pratico": "Adicionou um item ao carrinho às sexta à noite? Deixe para decidir no domingo. A maioria das pessoas desiste.",
+          "tags": [
+            "comportamento",
+            "impulso",
+            "controle"
+          ]
+        },
+        {
+          "id": "DIC003",
+          "titulo": "Registro diário de gastos por 30 dias",
+          "descricao": "Durante um mês inteiro, anote todo e qualquer gasto — incluindo os pequenos, como cafezinho ou estacionamento. Não é para julgar, é para enxergar. Apenas o ato de registrar já reduz gastos em média 15% no primeiro mês.",
+          "quando_aplicar": "usuario_nao_sabe_para_onde_vai_o_dinheiro",
+          "exemplo_pratico": "Use um caderno, planilha ou app. O formato não importa — o que importa é a consistência diária.",
+          "tags": [
+            "registro",
+            "consciencia",
+            "iniciante"
+          ]
+        }
+      ]
+    }
+  ]
+}
+]
