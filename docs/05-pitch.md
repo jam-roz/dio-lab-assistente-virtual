@@ -16,7 +16,9 @@ FinGuide ajuda o usuário a registrar e organizar os seus gastos, saber para ond
 ### 3. Exemplos de uso e prática
 > Mostre o agente funcionando 
 
-[Descreva o que será mostrado]
+![Preview](assets/preview1.png)
+
+![Preview2](assets/preview2.png)
 
 ### 4. Diferencial e Impacto 
 > Por que essa solução é inovadora e qual é o impacto dela na sociedade?
