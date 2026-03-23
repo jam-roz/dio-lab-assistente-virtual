@@ -6,5 +6,5 @@ json
 
 #LLM utilizada
 Ollama (localhost)
-versão - llama3
+versao - llama3
 
