@@ -181,7 +181,7 @@ O FinGuide é inovador não pela tecnologia em si, mas pelo **problema de acesso
 
 ## 👤 Autor
 
-Desenvolvido como projeto prático do curso de Inteligência Artificial da **DIO — Digital Innovation One** com parceria do Banco Bradesco.
+Jamille Rozinelli - Desenvolvido como projeto prático do curso de Inteligência Artificial da **DIO — Digital Innovation One** com parceria do Banco Bradesco.
 
 ---
 
