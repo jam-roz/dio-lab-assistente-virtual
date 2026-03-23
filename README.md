@@ -1,6 +1,6 @@
 # 💰 FinGuide AI — Assistente Virtual de Saúde Financeira
 
-> Projeto desenvolvido como parte do desafio prático da [DIO](https://www.dio.me/) — Construção de Agentes de IA com base de conhecimento estruturada.
+> Projeto desenvolvido como parte do desafio prático da [DIO](https://www.dio.me/) — Construção de Agentes de IA com base de conhecimento estruturada - GenAI Dados Bradesco.
 
 ---
 
@@ -37,19 +37,26 @@ O FinGuide resolve isso sendo um parceiro financeiro acessível, empático e dis
 ```
 finguide-ai/
 │
+├── assets
+│
 ├── docs/
 │   ├── 01-documentacao-agente.md         # Documentação completa do agente
-│   ├── 02-base-conhecimento.md           # Exemplos de interações reais
-│   ├── 03-prompt.md                      # Casos limite e comportamentos de borda
-│   └── finguide_metricas.docx            # Avaliação, métricas e critérios de teste
+│   ├── 02-base-conhecimento.md           # Todos os dados e inforações usadas pelo agente
+│   ├── 03-prompt.md                      # Instruções do agente
+│   ├── 04-metricas.md                    # Avaliação, métricas e critérios de teste        
+│   └── 05-pitch.md                       # Conclusões finais e demonstração do projeto
 │
-├── knowledge_base/
+├── data/
 │   ├── historico_atendimentos.csv        # Histórico de conversas anteriores
 │   ├── perfil_usuario.json               # Perfis comportamentais e financeiros
 │   ├── dicas_financeiras.json            # Base de orientações por categoria e perfil
 │   └── transacoes.csv                    # Transações financeiras dos usuários
 │
-└── README.md
+└── src/
+│    ├── app.py                            # Código do agente
+│    ├── requirements.txt                  # Requerimentos do projeto
+│
+└── README.MD
 ```
 
 ---
@@ -165,16 +172,16 @@ O FinGuide é inovador não pela tecnologia em si, mas pelo **problema de acesso
 
 ## 🛠️ Tecnologias e Ferramentas
 
-- **Plataforma de IA:** [DIO](https://www.dio.me/) — desafio de criação de agentes
+- **Interface do agente**: Biblioteca Streamlit
+- **LLM e verão**: Ollama (local) - llama3
 - **Base de conhecimento:** arquivos `.csv` e `.json` estruturados
-- **Documentação:** gerada com `docx.js`
-- **Linguagem dos dados:** Português brasileiro
+- **Linguagem de programação:** Python para aplicação do programa 
 
 ---
 
 ## 👤 Autor
 
-Desenvolvido como projeto prático do curso de Inteligência Artificial da **DIO — Digital Innovation One**.
+Desenvolvido como projeto prático do curso de Inteligência Artificial da **DIO — Digital Innovation One** com parceria do Banco Bradesco.
 
 ---
 
