@@ -1,0 +1,10 @@
+# Bibliotecas utilizadas no projeto FinGuide
+streamlit
+pandas
+requests
+json
+
+#LLM utilizada
+Ollama (localhost)
+versão - llama3
+
