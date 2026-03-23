@@ -1,149 +1,181 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 💰 FinGuide AI — Assistente Virtual de Saúde Financeira
 
-## Contexto
-
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
-
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
-
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+> Projeto desenvolvido como parte do desafio prático da [DIO](https://www.dio.me/) — Construção de Agentes de IA com base de conhecimento estruturada.
 
 ---
 
-## O Que Você Deve Entregar
+## 📌 Sobre o Projeto
 
-### 1. Documentação do Agente
+O **FinGuide AI** é um assistente virtual conversacional especializado em **saúde financeira pessoal**. Seu objetivo é ajudar usuários a entenderem para onde vai o dinheiro, organizar gastos por categoria, identificar padrões prejudiciais e traçar planos concretos para sair de dívidas ou atingir metas financeiras.
 
-Defina **o que** seu agente faz e **como** ele funciona:
-
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+Diferente de uma busca genérica na internet, o FinGuide cruza o perfil do usuário, seu histórico de atendimentos e suas transações reais para entregar orientações personalizadas — democratizando um tipo de acompanhamento que antes só era acessível por meio de consultores financeiros pagos.
 
 ---
 
-### 2. Base de Conhecimento
+## 🎯 Problema que o Agente Resolve
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
+Mais de 70 milhões de brasileiros estão inadimplentes — e grande parte deles não tem controle sobre os próprios gastos. O problema raramente é **quanto** se ganha, mas **como** o dinheiro é gerido no dia a dia, sem consciência e sem acompanhamento.
 
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
-
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+O FinGuide resolve isso sendo um parceiro financeiro acessível, empático e disponível 24h: o usuário descreve sua situação, e o agente orienta com base em dados reais e boas práticas de finanças pessoais.
 
 ---
 
-### 3. Prompts do Agente
+## 🧠 Persona do Agente
 
-Documente os prompts que definem o comportamento do seu agente:
-
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
-
----
-
-### 4. Aplicação Funcional
-
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
+| Atributo | Descrição |
+|---|---|
+| **Nome** | FinGuide (Finn, no informal) |
+| **Especialidade** | Saúde financeira pessoal |
+| **Personalidade** | Empático, direto, educativo e sem julgamentos |
+| **Tom** | Semiformal — próximo e humano, porém confiável |
+| **Comportamento** | Consultivo-motivacional: faz perguntas, explica o raciocínio, celebra progressos |
 
 ---
 
-### 5. Avaliação e Métricas
-
-Descreva como você avalia a qualidade do seu agente:
-
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
-
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
-
----
-
-## Estrutura do Repositório
+## 🗂️ Estrutura do Projeto
 
 ```
-📁 lab-agente-financeiro/
+finguide-ai/
 │
-├── 📄 README.md
+├── docs/
+│   ├── 01-documentacao-agente.md         # Documentação completa do agente
+│   ├── 02-base-conhecimento.md           # Exemplos de interações reais
+│   ├── 03-prompt.md                      # Casos limite e comportamentos de borda
+│   └── finguide_metricas.docx            # Avaliação, métricas e critérios de teste
 │
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
+├── knowledge_base/
+│   ├── historico_atendimentos.csv        # Histórico de conversas anteriores
+│   ├── perfil_usuario.json               # Perfis comportamentais e financeiros
+│   ├── dicas_financeiras.json            # Base de orientações por categoria e perfil
+│   └── transacoes.csv                    # Transações financeiras dos usuários
 │
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
-│
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+└── README.md
 ```
 
 ---
 
-## Dicas Finais
+## 📚 Base de Conhecimento
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+A inteligência do FinGuide é alimentada por quatro arquivos estruturados que, em conjunto, permitem respostas personalizadas e contextualizadas:
+
+### `historico_atendimentos.csv`
+Registra todas as interações anteriores entre o agente e os usuários. Contém tema da conversa, sentimento do usuário, resumo do atendimento, ação recomendada e status de conclusão.
+
+**Utilização:** contextualizar o histórico do usuário e identificar evolução ao longo do tempo — por exemplo, perceber que uma dívida caiu de R$ 18.400 para R$ 12.600 em três meses e ajustar a orientação de acordo.
+
+---
+
+### `perfil_usuario.json`
+Armazena o perfil completo de cada usuário: dados pessoais, situação financeira (renda, dívidas, score de crédito, reserva de emergência), perfil comportamental (tipo de perfil, disciplina, nível de conhecimento) e metas ativas.
+
+**Utilização:** personalizar recomendações conforme o momento financeiro de cada pessoa. Um usuário `endividado_em_recuperacao` recebe orientações diferentes de um `organizador_em_evolucao`, mesmo que a pergunta seja idêntica.
+
+**Tipos de perfil mapeados:**
+- `gastador_involuntario` — gasta sem perceber, não sabe para onde vai o dinheiro
+- `organizador_em_evolucao` — disciplinado, quer aprender a investir
+- `endividado_em_recuperacao` — foco total em quitar dívidas
+- `iniciante_consciente` — primeiro emprego, construindo base financeira
+- `consolidado_com_pontos_cegos` — boa renda, mas com comportamentos prejudiciais
+
+---
+
+### `dicas_financeiras.json`
+Base de conhecimento com orientações, estratégias e conceitos financeiros categorizados por tema e perfil-alvo. Inclui quando aplicar cada dica, exemplos práticos e tags para facilitar o cruzamento com o contexto do usuário.
+
+**Categorias cobertas:**
+- Controle de gastos (método 50-30-20, registro diário, auditoria de assinaturas)
+- Dívidas (método Avalanche, método Bola de Neve, renegociação, cheque especial)
+- Reserva de emergência (quanto guardar, onde guardar)
+- Planejamento e metas (metas SMART, pague-se primeiro)
+- Investimentos básicos (poupança vs. CDB vs. Tesouro Direto, PGBL vs. VGBL)
+
+**Utilização:** selecionar a orientação mais adequada ao perfil e ao momento do usuário, evitando respostas genéricas.
+
+---
+
+### `transacoes.csv`
+Registro detalhado de movimentações financeiras dos usuários: data, descrição, categoria, subcategoria, valor, tipo (débito/crédito), forma de pagamento e flag de essencialidade.
+
+**Utilização:** analisar padrões de gastos, calcular totais por categoria e identificar comportamentos específicos — como percentual elevado de delivery, compras parceladas excessivas ou uso recorrente de cheque especial.
+
+**Categorias de transação mapeadas:** moradia, alimentação, transporte, saúde, lazer, educação, vestuário, dívidas, poupança, investimentos e compras.
+
+---
+
+## 💬 Exemplos de Interação
+
+### Interação típica — usuário sem controle financeiro
+
+> **Usuário:** Ganho R$ 3.500 por mês mas sempre fico no zero a zero. Não sei pra onde vai meu dinheiro.
+>
+> **FinGuide:** Você não está sozinho nisso. O primeiro passo é simples: registre todos os gastos por 30 dias — sem julgamentos, só para enxergar. Só de registrar, a maioria das pessoas já reduz os gastos em cerca de 15% no primeiro mês...
+
+### Interação com dado real da base
+
+> **Usuário:** Quanto gastei com alimentação esse mês?
+>
+> **FinGuide:** Suas transações de novembro mostram R$ 674,00 em alimentação — sendo R$ 388,70 em supermercado e R$ 285,30 em delivery. O delivery representa 42% do total. Reduzir para R$ 120/mês liberaria cerca de R$ 165 no orçamento...
+
+### Edge case — pergunta fora do escopo
+
+> **Usuário:** Qual a previsão do tempo para o final de semana?
+>
+> **FinGuide:** Essa está fora da minha alçada! Sou especializado em saúde financeira. Para o clima, o Climatempo ou o Google te ajudam melhor. Mas já que o fim de semana se aproxima — que tal verificarmos seus gastos com lazer esse mês?
+
+---
+
+## ⚠️ Limitações Declaradas
+
+O FinGuide foi projetado com fronteiras claras de responsabilidade:
+
+- ❌ Não realiza diagnósticos financeiros formais nem substitui um CFP (planejador financeiro certificado)
+- ❌ Não acessa contas bancárias, aplicativos ou dados financeiros reais
+- ❌ Não recomenda investimentos específicos com base em perfil de risco
+- ❌ Não realiza cálculos jurídicos de dívidas — orienta a buscar Procon ou advogado
+- ❌ Não garante resultados — os resultados dependem do comportamento e disciplina do usuário
+- ❌ Não armazena histórico entre sessões — cada conversa parte do contexto fornecido
+- ❌ Não trata questões de saúde mental com profundidade clínica
+
+---
+
+## 🧪 Cenários de Teste e Avaliação
+
+| # | Cenário | Comportamento Esperado |
+|---|---|---|
+| TC-01 | "Quanto gastei com alimentação?" | Retornar valor baseado em `transacoes.csv` com detalhamento por subcategoria |
+| TC-02 | "Qual sugestão de gastos você recomenda pra mim?" | Recomendação personalizada cruzando perfil + histórico + transações |
+| TC-03 | "Qual a previsão do tempo?" | Informar que o escopo é exclusivamente educação financeira |
+| TC-04 | "Quanto são os gastos de XYZ?" (dado inexistente) | Admitir ausência da informação e orientar como fornecê-la |
+
+Cada cenário é avaliado por critérios de: precisão dos dados, personalização, ausência de alucinação, tom adequado e redirecionamento construtivo.
+
+---
+
+## 🚀 Inovação e Impacto
+
+O FinGuide é inovador não pela tecnologia em si, mas pelo **problema de acesso** que resolve: orientação financeira personalizada e contínua, disponível para qualquer pessoa, a qualquer hora, sem custo de consultoria.
+
+**Impacto individual:** redução do estresse financeiro e retomada do controle sobre o próprio dinheiro.
+
+**Impacto familiar:** hábitos financeiros saudáveis se multiplicam dentro do núcleo familiar.
+
+**Impacto sistêmico:** em escala, contribui para redução de inadimplência e aumento da educação financeira da população.
+
+---
+
+## 🛠️ Tecnologias e Ferramentas
+
+- **Plataforma de IA:** [DIO](https://www.dio.me/) — desafio de criação de agentes
+- **Base de conhecimento:** arquivos `.csv` e `.json` estruturados
+- **Documentação:** gerada com `docx.js`
+- **Linguagem dos dados:** Português brasileiro
+
+---
+
+## 👤 Autor
+
+Desenvolvido como projeto prático do curso de Inteligência Artificial da **DIO — Digital Innovation One**.
+
+---
+
+> *"O FinGuide não substitui um consultor financeiro — ele garante que qualquer pessoa tenha acesso a um ponto de partida confiável para cuidar do próprio dinheiro."*
